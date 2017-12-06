@@ -37,6 +37,15 @@ class MakeupViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func cameraTapped(_ sender: Any) {
     }
     @IBAction func addTapped(_ sender: Any) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let makeup = Makeup(context: context)
+        makeup.productName = productNameTextField.text
+        makeup.image = UIImagePNGRepresentation(makeupImageView.image!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
     
  
