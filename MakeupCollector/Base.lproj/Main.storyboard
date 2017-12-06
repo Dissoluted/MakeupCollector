@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3dl-OO-4n6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MakeupCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aLw-8F-fTb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bPq-C2-VSe">
+                            <connections>
+                                <segue destination="bgk-XG-iGS" kind="show" id="pS8-U7-lOv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Makeup View Controller-->
+        <scene sceneID="fbR-8v-lPe">
+            <objects>
+                <viewController id="bgk-XG-iGS" customClass="MakeupViewController" customModule="MakeupCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FKg-Ga-83M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhiIlluminatedGamergirls.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8uA-tC-kzd">
+                                <rect key="frame" x="47" y="84" width="280" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="bwI-gz-Yig"/>
+                                    <constraint firstAttribute="width" constant="280" id="lmV-gn-yif"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmH-c1-xZy">
+                                <rect key="frame" x="43.5" y="254" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-BI-qJX">
+                                <rect key="frame" x="172" y="304" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="bgk-XG-iGS" eventType="touchUpInside" id="k4z-XR-muL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qUB-BI-qJX" firstAttribute="centerX" secondItem="FKg-Ga-83M" secondAttribute="centerX" id="1wq-Xg-MtP"/>
+                            <constraint firstItem="8uA-tC-kzd" firstAttribute="centerX" secondItem="FKg-Ga-83M" secondAttribute="centerX" id="40r-mF-brI"/>
+                            <constraint firstItem="dmH-c1-xZy" firstAttribute="centerX" secondItem="FKg-Ga-83M" secondAttribute="centerX" constant="-4" id="G9b-x1-C4B"/>
+                            <constraint firstItem="8uA-tC-kzd" firstAttribute="top" secondItem="4Uw-wW-lq4" secondAttribute="top" constant="20" id="HPp-1O-s3r"/>
+                            <constraint firstItem="dmH-c1-xZy" firstAttribute="width" secondItem="8uA-tC-kzd" secondAttribute="width" id="bNB-vP-EQV"/>
+                            <constraint firstItem="dmH-c1-xZy" firstAttribute="top" secondItem="8uA-tC-kzd" secondAttribute="bottom" constant="20" id="fPx-2L-hd1"/>
+                            <constraint firstItem="qUB-BI-qJX" firstAttribute="top" secondItem="dmH-c1-xZy" secondAttribute="bottom" constant="20" id="lct-Nz-EoS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Uw-wW-lq4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xHp-6u-gCi">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="qYY-kj-fTZ">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="bgk-XG-iGS" id="0HH-tF-XbZ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="01k-dk-jB0">
+                                <connections>
+                                    <action selector="photosTapped:" destination="bgk-XG-iGS" id="P7w-PA-Sqh"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="makeupImageView" destination="8uA-tC-kzd" id="IEd-IH-LLa"/>
+                        <outlet property="productNameTextField" destination="dmH-c1-xZy" id="eNj-9F-zle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naU-fp-HLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hsw-nk-SK8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3dl-OO-4n6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gxm-S6-wrR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HqT-wj-GCJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsx-Vl-2lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-593"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PhiIlluminatedGamergirls.jpg" width="2048" height="1365"/>
+    </resources>
 </document>

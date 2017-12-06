@@ -13,6 +13,8 @@
 		2D0504A71FD2171800F42B89 /* MakeupCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0504A51FD2171800F42B89 /* MakeupCollector.xcdatamodeld */; };
 		2D0504A91FD2171800F42B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0504A81FD2171800F42B89 /* Assets.xcassets */; };
 		2D0504AC1FD2171800F42B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0504AA1FD2171800F42B89 /* LaunchScreen.storyboard */; };
+		2D0504B51FD6199D00F42B89 /* PhiIlluminatedGamergirls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D0504B41FD610AA00F42B89 /* PhiIlluminatedGamergirls.jpg */; };
+		2D0504B71FD61C2600F42B89 /* MakeupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0504B61FD61C2600F42B89 /* MakeupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		2D0504A81FD2171800F42B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0504AB1FD2171800F42B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0504AD1FD2171800F42B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0504B31FD60FDC00F42B89 /* IMG_20171115_165431.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20171115_165431.jpg; sourceTree = "<group>"; };
+		2D0504B41FD610AA00F42B89 /* PhiIlluminatedGamergirls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhiIlluminatedGamergirls.jpg; sourceTree = "<group>"; };
+		2D0504B61FD61C2600F42B89 /* MakeupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +61,11 @@
 		2D05049D1FD2171800F42B89 /* MakeupCollector */ = {
 			isa = PBXGroup;
 			children = (
+				2D0504B31FD60FDC00F42B89 /* IMG_20171115_165431.jpg */,
+				2D0504B41FD610AA00F42B89 /* PhiIlluminatedGamergirls.jpg */,
 				2D05049E1FD2171800F42B89 /* AppDelegate.swift */,
 				2D0504A01FD2171800F42B89 /* ViewController.swift */,
+				2D0504B61FD61C2600F42B89 /* MakeupViewController.swift */,
 				2D0504A21FD2171800F42B89 /* Main.storyboard */,
 				2D0504A81FD2171800F42B89 /* Assets.xcassets */,
 				2D0504AA1FD2171800F42B89 /* LaunchScreen.storyboard */,
@@ -129,6 +137,7 @@
 				2D0504AC1FD2171800F42B89 /* LaunchScreen.storyboard in Resources */,
 				2D0504A91FD2171800F42B89 /* Assets.xcassets in Resources */,
 				2D0504A41FD2171800F42B89 /* Main.storyboard in Resources */,
+				2D0504B51FD6199D00F42B89 /* PhiIlluminatedGamergirls.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +151,7 @@
 				2D0504A11FD2171800F42B89 /* ViewController.swift in Sources */,
 				2D0504A71FD2171800F42B89 /* MakeupCollector.xcdatamodeld in Sources */,
 				2D05049F1FD2171800F42B89 /* AppDelegate.swift in Sources */,
+				2D0504B71FD61C2600F42B89 /* MakeupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
